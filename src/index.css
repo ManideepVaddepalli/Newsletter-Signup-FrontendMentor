@@ -1,13 +1,208 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+}
+*,
+*::after*::before {
+  box-sizing: inherit;
+}
+@font-face {
+  font-family: Rob-Bold;
+  src: url("./fonts/Roboto-Bold.ttf");
+}
+@font-face {
+  font-family: Rob-Reg;
+  src: url("./fonts/Roboto-Regular.ttf");
+}
+* {
+  margin: 0px;
+  padding: 0px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  font-family: Rob-Reg;
+}
+.total-content {
+  border: 2px solid black;
+  display: flex;
+  flex-direction: column;
+}
+.image {
+  width: 100vw;
+  background-image: url("./images/illustration-sign-up-mobile.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  aspect-ratio: 375/284;
+}
+.left-content {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+}
+.text-content {
+  margin-bottom: 25px;
+  display: flex;
+  color: hsl(234, 29%, 20%);
+  flex-direction: column;
+}
+.text-content > h1 {
+  font-family: "Rob-Bold";
+  margin-bottom: 1em;
+}
+.text-content > p {
+  line-height: 1.5em;
+  margin-bottom: 1.5em;
+}
+.text-content > ul {
+  list-style: none;
+}
+.text-content > ul > li {
+  line-height: 1.5em;
+  margin-bottom: 1em;
+  display: flex;
+  align-items: center;
+}
+.text-content > ul > li::before {
+  content: url("./images/icon-list.svg");
+  margin-right: 1em;
+}
+.form {
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+.form > h5 {
+  color: hsl(234, 29%, 20%);
+  display: flex;
+  font-family: Rob-Bold;
+  margin-bottom: 0.75em;
+}
+.form > h5 > span {
+  margin-left: auto;
+  font-family: Rob-Reg;
+  color: hsl(4, 100%, 67%);
+}
+.form > input {
+  font-size: 16px;
+  padding: 1em 1.5em;
+  font-family: Rob-Reg;
+  border: 1px solid hsl(231, 7%, 60%);
+  border-radius: 10px;
+  margin-bottom: 1em;
+  outline: 0px;
+}
+.form > input:focus {
+  border-color: hsl(231, 7%, 60%);
+  color: hsl(234, 29%, 20%);
+}
+.form > button {
+  text-align: center;
+  font-family: Rob-Bold;
+  background-color: hsl(234, 29%, 20%);
+  color: hsl(0, 0%, 100%);
+  font-size: 16px;
+  padding: 1em 1.5em;
+  border-radius: 10px;
+  border: 0px;
+}
+.form > button:hover {
+  cursor: pointer;
+  background-image: linear-gradient(
+    80deg,
+    hsl(323, 100%, 67%),
+    hsl(4, 100%, 67%),
+    hsl(12, 100%, 67%)
+  );
+}
+.card-content {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  flex-wrap: wrap;
+}
+.card-top-section {
+  margin-top: 30vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.card-top-section > svg {
+  margin-bottom: 40px;
+}
+.card-top-section > h1 {
+  font-family: Rob-Bold;
+  margin-bottom: 20px;
+}
+.card-top-section > p {
+  line-height: 1.5em;
+}
+.card-top-section > p > span {
+  font-family: Rob-Bold;
+}
+.card-content > button {
+  background-color: hsl(234, 29%, 20%);
+  font-family: Rob-Bold;
+  font-size: 16px;
+  color: white;
+  border-radius: 10px;
+  border: 0px;
+  padding: 15px 20px;
+  margin-top: auto;
+}
+.card-content > button:hover {
+  cursor: pointer;
+  background-image: linear-gradient(
+    80deg,
+    hsl(323, 100%, 67%),
+    hsl(4, 100%, 67%),
+    hsl(12, 100%, 67%)
+  );
+}
+@media (min-width: 767px) {
+  body {
+    background-color: hsl(235, 18%, 26%);
+  }
+  .total-content {
+    box-shadow: 0px 5px 30px black;
+    background-color: white;
+    border-radius: 20px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    flex-direction: row-reverse;
+  }
+  .image {
+    margin-left: auto;
+    position: relative;
+    max-width: 375px;
+    aspect-ratio: 400/593;
+    background-image: url("./images/illustration-sign-up-desktop.svg");
+  }
+  .left-content {
+    justify-content: center;
+    align-items: center;
+    width: 35vw;
+    padding: 30px 30px 0px 20px;
+  }
+  .form {
+    width: 100%;
+  }
+  .card-top-section {
+    margin: 0px;
+  }
+  .card-content {
+    padding: 50px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50px;
+    background-color: white;
+    width: 300px;
+    height: 400px;
+  }
 }
