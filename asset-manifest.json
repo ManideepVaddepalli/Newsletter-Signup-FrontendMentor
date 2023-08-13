@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Newsletter-Signup-FrontendMentor/static/css/main.040ec752.css",
+    "main.css": "/Newsletter-Signup-FrontendMentor/static/css/main.fdaf0748.css",
     "main.js": "/Newsletter-Signup-FrontendMentor/static/js/main.64a032ff.js",
     "static/js/787.a5a328bf.chunk.js": "/Newsletter-Signup-FrontendMentor/static/js/787.a5a328bf.chunk.js",
     "static/media/Roboto-Regular.ttf": "/Newsletter-Signup-FrontendMentor/static/media/Roboto-Regular.160d7a6ac26376e5e977.ttf",
@@ -9,12 +9,12 @@
     "static/media/illustration-sign-up-desktop.svg": "/Newsletter-Signup-FrontendMentor/static/media/illustration-sign-up-desktop.ce2024babf0bc98a8862.svg",
     "index.html": "/Newsletter-Signup-FrontendMentor/index.html",
     "static/media/icon-list.svg": "/Newsletter-Signup-FrontendMentor/static/media/icon-list.5e317c030bb9f11a3343.svg",
-    "main.040ec752.css.map": "/Newsletter-Signup-FrontendMentor/static/css/main.040ec752.css.map",
+    "main.fdaf0748.css.map": "/Newsletter-Signup-FrontendMentor/static/css/main.fdaf0748.css.map",
     "main.64a032ff.js.map": "/Newsletter-Signup-FrontendMentor/static/js/main.64a032ff.js.map",
     "787.a5a328bf.chunk.js.map": "/Newsletter-Signup-FrontendMentor/static/js/787.a5a328bf.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.040ec752.css",
+    "static/css/main.fdaf0748.css",
     "static/js/main.64a032ff.js"
   ]
 }
